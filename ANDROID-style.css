@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* BASE Setting */
+
+li {
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+/* BASE Setting */
+
+.navbar {
+  width: 100%;
+  height: 6vh;
+  /* border: 2px solid red; */
+
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  justify-content: space-around;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.044);
+  border-radius: 0 0 5px 5px;
+}
+.navbar img {
+  width: 120px;
+}
+.navbar .logbtn {
+  text-align: center;
+  width: 70px;
+  line-height: 30px;
+  height: 30px;
+  background: linear-gradient(90deg, #ea4380, #c532cf);
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 900;
+}
+.backimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backimg img {
+  position: relative;
+  top: 0vh;
+  /* right: 10vh; */
+  width: 100vh;
+}
+.main-content {
+}
+.textdiv {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+}
+.imgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 380px;
+}
+
+.imgdiv img {
+  width: 132%;
+  /* opacity: 0%; */
+}
+
+.textdiv p {
+  padding: 20px;
+  font-weight: 100;
+}
+.textdiv .btn {
+  font-weight: 100;
+  width: 18vh;
+  height: 40px;
+  line-height: 40px;
+  background: linear-gradient(90deg, #ea4380, #c532cf);
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+}

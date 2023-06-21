@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+/* _________________________Universal_________________________ */
+
+ul {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+}
+li {
+  margin: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.links li:hover {
+  text-decoration: underline 2px solid;
+  color: #cc3cb4;
+  transition: 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+
+/* _________________________Universal_________________________ */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  /* background-color: aliceblue; */
+}
+.container .navbar {
+  width: 100%;
+  height: auto ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar img {
+  width: 130px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  text-align: center;
+  width: 150px;
+  height: 4vh;
+  line-height: 4vh;
+  background: linear-gradient(90deg, #ea4380, #c532cf);
+  /* box-shadow: 5px 5px 10px black; */
+  border-radius: 50px 0 50px 50px;
+  color: white;
+  cursor: pointer;
+}
+.logbtn {
+  text-align: center;
+  width: 80px;
+  height: 4vh;
+  line-height: 4vh;
+  background: linear-gradient(90deg, #ea4380, #c532cf);
+  /* box-shadow: 5px 5px 10px black; */
+  border-radius: 50px;
+  color: white;
+}
+.backimg img {
+  height: 100vh;
+  width: 100%;
+  opacity: 100%;
+  position: absolute;
+}
+.main-content {
+  position: absolute;
+  height: 96vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-content .textdiv {
+  width: 50%;
+  height: 96vh;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-content .textdiv h1 {
+  font-size: 60px;
+  margin-left: 120px;
+}
+.main-content .textdiv p {
+  font-size: 20px;
+  margin: 10px 0 20px 120px;
+}
+.main-content .textdiv .btn {
+  margin-left: 120px;
+  width: ;
+  height: 5vh;
+  line-height: 5vh;
+  font-weight: 600;
+}
+.main-content .imgdiv {
+  width: 50%;
+  height: 96vh;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .imgdiv img {
+  width: 70%;
+  margin: auto;
+}
+
+/* This is for Android */
+
+@media all and (min-width: 350px) and (max-width: 450px) {
+  .container .navbar {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow: hidden; */
+  }
+}
